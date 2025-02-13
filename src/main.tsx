@@ -12,7 +12,7 @@ createRoot(document.getElementById('root')!).render(
     <ErrorBoundary>
       <ThemeProvider>
         <NotificationProvider>
-          <BrowserRouter>
+          <BrowserRouter basename="/egybest">
             <App />
           </BrowserRouter>
         </NotificationProvider>
