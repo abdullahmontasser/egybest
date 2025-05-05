@@ -4,7 +4,8 @@
     {
       "name": "backend",
       "dockerfilePath": "./backend/Dockerfile",
-      "rootDir": "./backend"
+      "rootDir": "./backend",
+      "dockerContext": "./backend"
     },
     {
       "name": "frontend",
