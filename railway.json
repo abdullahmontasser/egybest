@@ -1,0 +1,19 @@
+{
+  "$schema": "https://railway.app/railway.schema.json",
+  "services": [
+    {
+      "name": "backend",
+      "dockerfilePath": "./backend/Dockerfile",
+      "rootDir": "./backend"
+    },
+    {
+      "name": "frontend",
+      "dockerfilePath": "./frontend/Dockerfile",
+      "rootDir": "./frontend",
+      "dockerContext": "./frontend",
+      "dockerfileBuildArgs": {
+        "VITE_API_URL": "${{ services.backend.url }}/api"
+      }
+    }
+  ]
+}

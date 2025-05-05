@@ -70,6 +70,15 @@ npm run build
 npm run deploy
 ```
 
+### Railway Deployment
+
+This project is configured for deployment on Railway. To deploy:
+
+1.  Push your code to a GitHub repository.
+2.  Connect your GitHub repository to Railway.
+3.  Railway will automatically detect the `railway.json` file and build/deploy the frontend and backend services.
+4.  Ensure you configure the necessary environment variables in Railway, especially `MONGODB_URI` and `JWT_SECRET` for the backend service. You can use Railway's managed MongoDB service or connect to an external one.
+
 ## 🌐 Live Demo
 
 Visit the live site: [EgyBest](https://abdullahmontasser.github.io/egybest)
