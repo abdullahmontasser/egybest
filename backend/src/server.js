@@ -30,7 +30,7 @@ app.use(cookieParser());
 
 // Enable CORS
 app.use(cors({
-  origin: 'http://localhost:3000', // Adjust for your frontend URL if needed
+  origin: process.env.REACT_APP_FRONTEND_URL || 'http://localhost:3000', // Adjust for your frontend URL if needed
   credentials: true
 }));
 
